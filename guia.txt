@@ -1,0 +1,53 @@
+Paso a paso para el desarrollo del examen:
+
+1. Analizar el caso de estudio
+2. Definir los avances (para los commits en GitHub)
+3. Subir el proyecto vacío a GitHub
+4. Ejecutar comandos inicializadores (técnicamente esto es el segundo Commit)
+
+npm create vite@latest frontend-matriculas -- --template React
+cd frontend-matriculas
+npm install axios react-router-dom react-hook-form sweetalert2
+
+5. Instalación de Tailwind (tercer Commit)
+
+npm install -D @tailwindcss/postcss
+
+- Generar postcss.config.js
+export default {
+    plugins: {
+        "@tailwindcss/postcss": {},
+    },
+}
+
+- Modificar index.css
+@import "tailwindcss";
+
+- Inicializar el servidor
+npm run dev
+
+6. Conexiones base (cuarto Commit)
+
+- Generar el archivo de variables de entorno
+VITE_BACKEND_URL=https://c1-practice.onrender.com
+
+- Config
+- Conext
+- Layout
+
+7. Primeros Dashboard (quinto Commit)
+- Login
+
+8. Módulo de Estudiantes (sexto Commit)
+- Estudiantes.jsx
+- FormularioEstudiante.jsx
+
+9. Módulo de Materias (séptimo Commit)
+- Materias.jsx
+- FormularioMateria.jsx
+
+10. Módulo de Matriculas (octavo Commit)
+- Matriculas.jsx
+- FormularioMatricula.jsx
+
+11. Unificación de repositorios, readme y despliegue
